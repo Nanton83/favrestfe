@@ -1,30 +1,24 @@
-h1 {
-	font-family: 'Alegreya' ;
-}
-
-body {
-	font-family: 'Source Sans Pro' ;
-	width: 50%;
-	margin-left: 25%;
-	text-align: justify;
-	line-height: 1.7;
-	font-size: 18px;
-}
-
-input {
-	font-size: 18px;
+html {
+	background: url(waterfront-restaurants.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  }
+  
+  .container {
+	background-color: whitesmoke;
+	margin: 0 auto;
+	max-width: 700px;
+	box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	border-radius: 10px;
+	padding: 1em;
+  }
+  
+  h1 {
 	text-align: center;
-}
-
-button {
-	font-size: 18px;
-	color: #fff;
-}
-
-#generate {
-	background-color: #09f;
-}
-
-#copy {
-	background-color: #0c6;
-}
+  }
+  
+  .centerform {
+	text-align: center;
+  }

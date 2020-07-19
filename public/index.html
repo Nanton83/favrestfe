@@ -1,18 +1,64 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Alegreya|Source+Sans+Pro&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Our Favorite Restaurants</title>
 </head>
-<html>
+
 <body>
-<h1>Lorem Ipsum generator</h1>
-  <p>How many paragraphs do you want to generate?</p>
-  <input type="number" id="quantity" min="1" max="20" value="1">
-  <button id="generate">Generate</button>
-  <button id="copy">Copy!</button>
-<div id="lorem">
-</div>
-<script type="text/javascript" src="script.js"></script>
+
+    <div class="container">
+        <div class="centerform">
+
+            <h1>Our Favorite Restaurants</h1>
+
+            <form id="new-restaurant-form">
+                <input type="text" name="restaurant-name" id="new-restaurant-name" placeholder="Restaurant Name" />
+                <input type="text" name="restaurant-city" id="new-restaurant-city" placeholder="Restaurant City" />
+                <input type="text" name="restaurant-state" id="new-restaurant-state" placeholder="Restaurant State" />
+                <input type="submit" value="Save Restaurant" />
+            </form><br>
+
+            <h1>Add Your Favorite Dish</h1>
+
+            <form id="new-dish-form">
+                <label for="restaurant-list">Choose A Restaurant:</label>
+                <select id="restaurant-list">
+                    <option value="" disabled selected hidden>Restaurants</option>
+                </select>
+                <input type="text" name="dish-name" id="new-dish-name" placeholder="Favorite Dish Name" />
+                <button id="dishBtn">
+                    Add Dish
+                </button><br>
+
+            </form><br>
+        </div>
+
+        <div id="restaurants-container">
+
+        </div><br>
+
+        <button id="sort">
+            Sort Alphabetically
+        </button>
+
+    </div>
+
+
+
+    <script src="src/components/dish.js"> </script>
+    <script src="src/components/dishes.js"> </script>
+    <script src="src/components/restaurant.js"> </script>
+    <script src="src/components/restaurants.js"> </script>
+    <script src="src/adapters/RestaurantsAdapter.js"> </script>
+    <script src="src/adapters/DishesAdapter.js"> </script>
+    <script src="src/components/app.js"> </script>
+    <script src="src/index.js"> </script>
+
 </body>
+
 </html>
