@@ -1,5 +1,5 @@
 
-class App {
+class Application {
     constructor() {
 
         this.restaurants = new Restaurants()
