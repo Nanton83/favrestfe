@@ -1,7 +1,7 @@
 class DishesAdapter {
     constructor() {
         this.baseUrl =
-            'http://localhost:3000/api/v1/dishes'
+            'https://favrestbe.herokuapp.com/api/v1/dishes'
     }
 
     getDishes() {
